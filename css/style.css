@@ -1,0 +1,285 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.ui-dialog-titlebar-close {
+  visibility: hidden;
+}
+
+#three-column-sort {
+  width: 662px;
+  margin: 200px auto 20px auto;
+  background: #ccc;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  overflow: hidden;
+}
+
+#three-column-sort h2 {
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#three-column-sort .column-1, #three-column-sort .column-2, #three-column-sort .column-3 {
+  float: left;
+  width: 220px;
+  border-left: 1px solid #fff;
+}
+
+#three-column-sort .column-1 {
+  border-left: 0;
+}
+
+#three-column-sort .drop-zone {
+  height: 280px;
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #444;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#three-column-sort .drop-zone li {
+  margin: 4px;
+  padding: 2px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+#drag-boxes li, .ui-sortable-helper {
+  display: block;
+  width: 176px;
+  height: 126px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#drag-boxes li {
+  display: none;
+  position: absolute;
+  top: -10px;
+}
+
+#progress {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 172px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+table {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+
+table tbody tr td {
+  padding: 2px;
+  width: 90px;
+  height: 66px;
+  vertical-align: top;
+}
+
+th {
+  border: 1px solid #333;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+th.header-1 {
+  background: #ff0000;
+}
+
+th.header-2 {
+  background: #ff4d4d;
+}
+
+th.header-3 {
+  background: #ff9999;
+}
+
+th.header-4 {
+  background: #ffe6e6;
+}
+
+th.header-5 {
+  background: #ccab9b;
+}
+
+th.header-6 {
+  background: #f5fff5;
+}
+
+th.header-7 {
+  background: #ebffeb;
+}
+
+th.header-8 {
+  background: #dbffdb;
+}
+
+th.header-9 {
+  background: #ccffcc;
+}
+
+td.active {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+td.active p {
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+}
+
+td.highlight-1, td.highlight-2, td.highlight-3 {
+  cursor: pointer;
+}
+
+.disagree, .agree {
+  position: absolute;
+  top: -16px;
+  color: #777;
+  font-weight: normal;
+}
+
+.disagree {
+  left: 0;
+}
+
+.agree {
+  right: 0;
+}
+
+td.ui-state-hover {
+  background: #bbb;
+}
+
+#drag-boxes li.highlight-1, .highlight-1, td.highlight-1 {
+  background: #fcc;
+}
+
+#drag-boxes li.highlight-2, .highlight-2, td.highlight-2 {
+  background: #ccc;
+}
+
+#drag-boxes li.highlight-3, .highlight-3, td.highlight-3 {
+  background: #6c9;
+}
+#survey-progress {
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+  font-weight: bold;
+}
+.continue-button {
+  margin-top: 640px;
+  text-align: center;
+}
+.answers {
+  width: 500px;
+  margin: 20px auto;
+}
+.answers h2 {
+  text-align: center;
+  padding: 6px;
+  background: #aaa;
+}
+.agree-answers h2 {
+  background: #ccffcc;
+}
+.disagree-answers h2 {
+  background: #ff0000;
+}
+.answers h3 {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+.answers textarea {
+  width: 100%;
+  height: 60px;
+  margin: 10px 0;
+}
+.answers input {
+  width: 100%;
+  margin: 10px 0;
+}
+.answers h4 {
+  margin: 10px 0 0 0;
+}
+#thank-you {
+  text-align: center;
+  padding: 100px 0;
+  font-weight: bold;
+  color: #0a6;
+  font-size: 28px;
+}
+.issues-message {
+  margin-top: 20px;
+  text-align: center;
+}
